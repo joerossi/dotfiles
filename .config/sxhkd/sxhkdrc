@@ -1,0 +1,21 @@
+
+XF86AudioMute
+	amixer -q -D pulse set Master toggle
+XF86AudioLowerVolume
+	amixer -q -D pulse set Master 5%- unmute
+XF86AudioRaiseVolume
+	amixer -q -D pulse set Master 5%+ unmute
+XF86AudioMicMute
+	pactl set-source-mute 1 toggle
+
+# XF86Display -- webcam?
+# XF86WLAN -- Don't use in config - turns off Wireless card
+XF86Tools
+	exec betterlockscreen -l dim
+XF86Search
+	rofi -show run
+# XF86LaunchA -- dmenu/rofi?
+XF86Explorer
+	termite -e ranger
+
+
