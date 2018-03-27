@@ -1,0 +1,2 @@
+#!/bin/sh
+'feh' '--bg-fill' '/home/joe/.cache/i3lock/blur.png' 
